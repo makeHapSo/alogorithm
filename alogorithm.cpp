@@ -1,7 +1,7 @@
 #include <iostream>
 
 //起泡排序
-void Bubble(int* arr, int len)
+void BubbleSort(int* arr, int len)
 {
 	for (int i = 0; i < len - 1; ++i)
 	{
@@ -21,7 +21,7 @@ void Bubble(int* arr, int len)
 }
 
 //快速排序
-void Quick_Sort(int* arr, int low, int hi)
+void QuickSort(int* arr, int low, int hi)
 {
 	if (low > hi) return;
 	int temp = arr[low];
@@ -61,7 +61,7 @@ void InsertSort(int* arr, int len)
 }
 
 //希尔排序
-void ShellSort1(int* arr, int len)
+void ShellSort(int* arr, int len)
 {
 	for (int gap = len / 2; gap >= 1; gap /= 2)
 	{
@@ -239,10 +239,10 @@ void Radixsort(int* arr, int n)
 int main()
 {
 	int arr[11] = { 21,13,14,17,16,22,37,17,43,29,11 };
-	//Bubble(arr, 11);
-	//Quick_Sort(arr, 0, 10);
+	//BubbleSort(arr, 11);
+	//QuickSort(arr, 0, 10);
 	//InsertSort(arr, 11);
-	//ShellSort1(arr,11);
+	//ShellSort(arr,11);
 	//SelectSort(arr,11);
 	//HeapSort(arr, 11);
 	//MergeSort(arr, 0, 10);
