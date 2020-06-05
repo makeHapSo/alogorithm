@@ -40,8 +40,8 @@ void QuickSort(int* arr, int low, int hi)
 	}
 	arr[low] = arr[i];
 	arr[i] = temp;
-	Quick_Sort(arr, low, i - 1);
-	Quick_Sort(arr, i + 1, hi);
+	QuickSort(arr, low, i - 1);
+	QuickSort(arr, i + 1, hi);
 }
 
 //直接插入排序
